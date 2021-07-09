@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from "react";
 import Cat from "./CatImageAPI";
 import Button from "./Button";
 import CatName from "./CatName";
@@ -9,11 +10,11 @@ const Product = ({ data, handleAdd }) => {
   return (
     <div class="scene">
       <div class="card">
-        <div class="card__face card__face--front">
+        <div class="card__face--front">
           <Cat url={data.url} />
           <CatName catName={data.name} />
         </div>
-        <div class="card__face card__face--back">
+        <div class="card__face--back">
           <CatPrice catPrice={data.price} />
           <Description catDesc={data.description} />
           <Button func={() => handleAdd(data)} />
@@ -23,7 +24,9 @@ const Product = ({ data, handleAdd }) => {
   );
 };
 
-// class App extends React.Component {
+export default Product;
+
+// class Product extends React.Component {
 //   constructor() {
 //     super();
 //       this.state = {
@@ -40,21 +43,21 @@ const Product = ({ data, handleAdd }) => {
 //   render() {
 //     return (
 //       <ReactCardFlip isFlipped={this.state.isFlipped} flipDirection="vertical">
-//         <YOUR_FRONT_CCOMPONENT>
+//         <div class="card__face--front" onClick={this.handleClick}>
 //           <Cat url={data.url} />
 //           <CatName catName={data.name} />
 //           <button onClick={this.handleClick}>Click to flip</button>
-//         </YOUR_FRONT_CCOMPONENT>
+//         </div>
 
-//         <YOUR_BACK_COMPONENT>
+//         <div class="card__face--back" onClick={this.handleClick}>
 //           <CatPrice catPrice={data.price} />
 //           <Description catDesc={data.description} />
 //           <Button func={() => handleAdd(data)} />
 //           <button onClick={this.handleClick}>Click to flip</button>
-//         </YOUR_BACK_COMPONENT>
+//         </div>
 //       </ReactCardFlip>
 //     )
 //   }
 // }
 
-export default Product;
+// export default Product;

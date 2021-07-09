@@ -70,16 +70,13 @@ body {
   transform-style: preserve-3d;
 }
 
-.card__face {
-  text-align: center;
-  position: absolute;
+.card__face--front {
   height: 100%;
   width: 100%;
-}
-
-.card__face--front {
+  position: absolute;
   background: rgb(255, 255, 255);
   text-align: center;
+  backface-visibility: hidden;
 }
 
 .card__face--front img {
@@ -87,15 +84,18 @@ body {
   width: 100%;
   object-fit: cover;
   object-position: center;
-  backface-visibility: hidden;
 }
 
 .card__face--back {
   padding: 10px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
   text-align: center;
   color: rgb(255, 255, 255);
   background: #fcb843;
   transform: rotateY(180deg);
+  backface-visibility: hidden;
 }
 
 .card:hover {
@@ -132,21 +132,11 @@ body {
   padding: 10px;
 }
 
-/* .cart a {
-  color: #fcb843;
-  opacity: 0.5%;
-} */
-
 .cart:hover {
   color: #fcb843;
   background-color: #ffffff;
   opacity: 1;
 }
-
-/* .cart:hover a {
-  color: #fcb843;
-  opacity: 100%;
-} */
 
 .footer {
   font-size: 12px;
@@ -202,6 +192,7 @@ body {
 .card__face--front {
   background: rgb(255, 255, 255);
   text-align: center;
+  backface-visibility: hidden;
 }
 
 .card__face--front img {
@@ -209,7 +200,6 @@ body {
   width: 100%;
   object-fit: cover;
   object-position: center;
-  backface-visibility: hidden;
 }
 
 .card__face--back {
@@ -218,6 +208,7 @@ body {
   color: rgb(255, 255, 255);
   background: #fcb843;
   transform: rotateY(180deg);
+  backface-visibility: hidden;
 }
 
 .card:hover {

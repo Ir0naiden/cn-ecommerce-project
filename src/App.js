@@ -42,7 +42,7 @@ const App = () => {
     <div className="container">
       <div className="header">
         <img src={Logo} alt="site logo" className="logo" />
-        <Nav />
+        <Nav basket={basket} />
       </div>
 
       <div>
