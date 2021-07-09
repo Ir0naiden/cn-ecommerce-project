@@ -138,6 +138,44 @@ body {
   opacity: 1;
 }
 
+.modal {
+  display: flex;
+  flex-direction: column;
+
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.cartItem {
+  display: flex;
+  flex-direction: row;
+  border-radius: 5px;
+  width: 400px;
+  height: 150px;
+  margin: 10px;
+  text-align: center;
+  overflow: hidden;
+
+  border: 2px solid #fcb843;
+}
+
+.cartLeft {
+  width: 200px;
+  height: 150px;
+}
+
+.cartLeft img {
+  height: 150px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.cartRight {
+  width: 200px;
+  height: 150px;
+  padding: 10px;
+}
+
 .footer {
   font-size: 12px;
   text-align: center;

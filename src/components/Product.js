@@ -15,7 +15,7 @@ const Product = ({ data, handleAdd }) => {
           <CatName catName={data.name} />
         </div>
         <div class="card__face--back">
-          <CatPrice catPrice={data.price} />
+          <CatPrice catPrice={data.price}/>
           <Description catDesc={data.description} />
           <Button func={() => handleAdd(data)} />
         </div>

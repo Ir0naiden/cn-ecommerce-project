@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import Card from "./Product";
+import Item from "./CartItem";
 import { Modal } from "react-responsive-modal";
 
-const Nav = ({basket}) => {
+const Nav = ({ basket }) => {
   const [open, setOpen] = useState(false);
 
   const onOpenModal = () => {
@@ -13,7 +13,6 @@ const Nav = ({basket}) => {
     setOpen(false);
   };
 
-  // const { open } = this.state;
   return (
     <div>
       <button className="cart" onClick={onOpenModal}>
@@ -22,9 +21,9 @@ const Nav = ({basket}) => {
       <Modal open={open} onClose={onCloseModal}>
         <h2>Your shopping cart</h2>
         {basket.map((cat, index) => {
-          return <Card key={index} data={cat} />
+          return <Item key={index} data={cat} />;
         })}
-        <p>Buy these f**king cats, we're sick of the sight of them.</p>
+        <p>Thanks for giving these guys a home.</p>
       </Modal>
     </div>
   );
