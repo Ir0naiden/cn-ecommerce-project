@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "react-responsive-modal/styles.css";
 import Card from "./components/Product";
 import Nav from "./components/Nav";
 import Logo from "./img/logo.svg";
@@ -15,6 +16,7 @@ const App = () => {
     fetchData();
   }, []);
 
+// Pulls in data from API
   const fetchData = async () => {
     const response = await fetch(
       "https://api.thecatapi.com/v1/images/search?limit=10"
@@ -30,11 +32,12 @@ const App = () => {
 
     setData(data);
   };
-
+// Add to basket functionality
   const handleAdd = (newItem) => {
     setBasket([...basket, newItem]);
   };
 
+// Page build
   return (
     <div className="container">
       <div className="header">
@@ -60,7 +63,7 @@ const App = () => {
 
       <div className="footer">
         <p>
-          Website hashed together by a bunch of junior web developers that have
+          Website hashed together by a bunch of junior web developers that <strong>LITERALLY</strong> have
           no idea.
         </p>
       </div>
