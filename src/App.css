@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(235, 235, 235);
+  width: 100vw;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  background-color: #fcb843;
+  padding: 10px 30px 10px 30px;
+
+  /* border: 2px solid red; */
+}
+
+.logo {
+  width: 350px;
+}
+
+.nav a{
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+#hero {
+  max-width: 100vw;
+}
+
+.divider {
+  text-align: center;
+  width: 100vw;
+  height: auto;
+  padding: 3px;
+  color: white;
+  background-color: #fcb843;
+}
+
+.productFeed {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  width: 100%;
+  margin: 20px 0 20px 0;
+
+  /* border: 2px solid black; */
+}
+
+.scene {
+  width: 300px;
+  height: 360px;
+  perspective: 600px;
+  margin: 20px;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.card__face {
+  text-align: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.card__face--front {
+  /* border-radius: 5px; */
+  background: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.card__face--front img {
+  /* border-radius: 5px 5px 0 0; */
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  backface-visibility: hidden;
+}
+
+.card__face--back {
+  /* border-radius: 5px; */
+  padding: 10px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  background: #fcb843;
+  transform: rotateY(180deg);
+}
+
+.card:hover {
+  transform: rotateY(180deg);
+  transition: ease-in-out 1s;
+}
+
+.addToBasket {
+  box-shadow: 0px 0px 0px transparent;
+  border: 0px;
+  text-shadow: 0px;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  border-radius: 5px;
+  background-color: #337ab7;
+  padding: 10px;
+}
+
+.addToBasket:hover {
+  background-color: #43a5fa;
+}
+
+.cart {
+  box-shadow: 0px 0px 0px transparent;
+  border: 0px;
+  text-shadow: 0px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 5px;
+  background-color: #ffffff;
+  opacity: 50%;
+  padding: 10px;
+}
+
+.cart a {
+  color: #fcb843;
+  opacity: 50%;
+}
+
+.cart:hover {
+  background-color: #ffffff;
+  opacity: 100%;
+}
+
+.cart:hover a {
+  color: #fcb843;
+  opacity: 100%;
+}
+
+.footer {
+  font-size: 12px;
+  text-align: center;
+  width: 100vw;
+  padding: 5px;
+  color: white;
+  background-color: #7c7c7c;
+}
