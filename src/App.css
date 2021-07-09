@@ -126,25 +126,27 @@ body {
   font-size: 14px;
   font-weight: 500;
   border-radius: 5px;
+  color: #fcb843;
   background-color: #ffffff;
-  opacity: 50%;
+  opacity: 0.5;
   padding: 10px;
 }
 
-.cart a {
+/* .cart a {
   color: #fcb843;
-  opacity: 50%;
-}
+  opacity: 0.5%;
+} */
 
 .cart:hover {
+  color: #fcb843;
   background-color: #ffffff;
-  opacity: 100%;
+  opacity: 1;
 }
 
-.cart:hover a {
+/* .cart:hover a {
   color: #fcb843;
   opacity: 100%;
-}
+} */
 
 .footer {
   font-size: 12px;
