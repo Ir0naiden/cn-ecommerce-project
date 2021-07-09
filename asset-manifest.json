@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/cn-ecommerce-project/static/css/main.cddfbf8f.chunk.css",
+    "main.css": "/cn-ecommerce-project/static/css/main.089759ae.chunk.css",
     "main.js": "/cn-ecommerce-project/static/js/main.d67fd807.chunk.js",
     "main.js.map": "/cn-ecommerce-project/static/js/main.d67fd807.chunk.js.map",
     "runtime-main.js": "/cn-ecommerce-project/static/js/runtime-main.a20b0183.js",
@@ -12,7 +12,7 @@
     "static/js/3.840f1f83.chunk.js.map": "/cn-ecommerce-project/static/js/3.840f1f83.chunk.js.map",
     "index.html": "/cn-ecommerce-project/index.html",
     "static/css/2.59d623fc.chunk.css.map": "/cn-ecommerce-project/static/css/2.59d623fc.chunk.css.map",
-    "static/css/main.cddfbf8f.chunk.css.map": "/cn-ecommerce-project/static/css/main.cddfbf8f.chunk.css.map",
+    "static/css/main.089759ae.chunk.css.map": "/cn-ecommerce-project/static/css/main.089759ae.chunk.css.map",
     "static/js/2.bdfcd2e8.chunk.js.LICENSE.txt": "/cn-ecommerce-project/static/js/2.bdfcd2e8.chunk.js.LICENSE.txt",
     "static/media/hero_bg.3fcf0e40.jpg": "/cn-ecommerce-project/static/media/hero_bg.3fcf0e40.jpg",
     "static/media/logo.bc1a7140.svg": "/cn-ecommerce-project/static/media/logo.bc1a7140.svg"
@@ -21,7 +21,7 @@
     "static/js/runtime-main.a20b0183.js",
     "static/css/2.59d623fc.chunk.css",
     "static/js/2.bdfcd2e8.chunk.js",
-    "static/css/main.cddfbf8f.chunk.css",
+    "static/css/main.089759ae.chunk.css",
     "static/js/main.d67fd807.chunk.js"
   ]
 }
